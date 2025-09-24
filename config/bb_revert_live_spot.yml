@@ -1,0 +1,16 @@
+mode: live
+bot_name: bb_revert_live
+strategy:
+  module: bollinger_revert
+  class: BollingerRevert
+  params:
+    window: 20
+    k: 2.0
+    qty: 0.001
+broker:
+  exchange_type: spot
+  dry_run: true
+  slippage_bps: 10
+  max_retries: 3
+symbol: BTC/USDT
+timeframe: 5m

@@ -1,0 +1,16 @@
+bot_name: eth_bb_15m
+broker:
+  dry_run: true
+  exchange_type: spot
+  max_retries: 3
+  slippage_bps: 10
+mode: live
+strategy:
+  class: BollingerRevert
+  module: bollinger_revert
+  params:
+    k: 2.5
+    qty: 0.01
+    window: 20
+symbol: ETH/USDT
+timeframe: 15m

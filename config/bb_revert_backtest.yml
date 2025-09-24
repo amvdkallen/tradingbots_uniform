@@ -1,0 +1,12 @@
+mode: backtest
+bot_name: bb_revert_backtest
+strategy:
+  module: bollinger_revert
+  class: BollingerRevert
+  params:
+    window: 20
+    k: 2.0
+    qty: 1.0
+symbol: BTC/USDT
+timeframe: 1h
+data_file: data/sample_bars.csv

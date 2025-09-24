@@ -1,0 +1,16 @@
+bot_name: btc_bb_1h
+broker:
+  dry_run: true
+  exchange_type: spot
+  max_retries: 3
+  slippage_bps: 10
+mode: live
+strategy:
+  class: BollingerRevert
+  module: bollinger_revert
+  params:
+    k: 2.0
+    qty: 0.001
+    window: 24
+symbol: BTC/USDT
+timeframe: 1h

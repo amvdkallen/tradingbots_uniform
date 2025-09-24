@@ -1,0 +1,9 @@
+mode: backtest
+bot_name: template_test
+strategy:
+  module: template_strategy
+  class: TemplateStrategy
+  params: {}
+symbol: BTC/USDT
+timeframe: 1h
+data_file: data/sample_bars.csv
